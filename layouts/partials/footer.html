@@ -1,0 +1,28 @@
+<div class="bg-color-primary">
+
+  <div class="container">
+    <div class="row gx-5">
+      <div class="col-md my-5">
+        <img src="/imgs/logo-1230-horizontal.png" width="300px">
+        <p>Pharmacy License #1234</p>
+        <p>Pharmacist License #1234</p>
+      </div>
+      <div class="col-md my-5">
+        <h3>Contact</h3>
+        <div class="my-2">Phone: {{ .Site.Params.phone}}</div>
+        <div class="my-2">Fax: {{ .Site.Params.fax }}</div>
+        <div class="my-2">Email: {{ .Site.Params.email }}</div>
+        <div class="my-2">social</div>
+      </div>
+      <div class="col-md my-5">
+        <h3>Address</h3>
+        <p>{{ .Site.Params.address }}<br>
+        {{ .Site.Params.address2 }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-2 text-center">
+    &copy; 2021 - 1230 Pharmacy & Travel Clinic
+  </div>
+</div>

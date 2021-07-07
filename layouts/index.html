@@ -1,0 +1,74 @@
+{{ define "main" }}
+<div class="hero bg-color-primary">
+  <div class="container">
+    <h1>1230 Pharmacy and Travel Clinic</h1>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 my-3">
+      <h2>Opening Hours</h2>
+      <table class="table">
+        <tr>
+          <td>Monday</td>
+          <td>9:00 AM - 6:00 PM</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>9:00 AM - 6:00 PM</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>9:00 AM - 6:00 PM</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>9:00 AM - 6:00 PM</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>9:00 AM - 6:00 PM</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>10:00 AM - 4:00 PM</td>
+        </tr>
+        <tr>
+          <td>Sunday</td>
+          <td>Closed</td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-6 my-3">
+      <h2 class="">Address</h2>
+      <p>{{ .Site.Params.address }}<br>
+        {{ .Site.Params.address2 }}</p>
+        <p>Free parking available at the back of the building.</p>
+      <div>
+
+        <a
+        href="https://www.google.com/maps/place/1230+Pharmacy+%26+Travel+Clinic/data=!3m1!4b1!4m2!3m1!1s0x53a01f0f71022a73:0x14b26a313c623106"
+        target="_blank"
+        itemprop="hasMap"
+        data-tracking-element-type="7"
+        ><div class="map" title="Map showing business location." style="background-image: url('https://maps.googleapis.com/maps/api/staticmap?scale=1&amp;size=1600x900&amp;style=feature:poi.business|visibility:off&amp;style=feature:water|visibility:simplified&amp;style=feature:road|element:labels.icon|visibility:off&amp;style=feature:road.highway|element:labels|saturation:-90|lightness:25&amp;format=jpg&amp;language=en-GB&amp;region=CA&amp;markers=color:0x48487f|53.4222679,-113.476204&amp;zoom=16&amp;client=google-presto&amp;signature=SXNWt7Rs73xrbB4Jmmv67MTKTvE');
+        "></div></a>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container my-5">
+  <h2>Google Reviews</h2>
+
+</div>
+
+<div class="">
+
+</div>
+
+{{ .Content }}
+
+
+{{ end }}

@@ -1,10 +1,11 @@
-baseURL = "1230pharmacy.ca"
+baseURL = "https://1230pharmacy.ca"
 languageCode = "en-us"
 title = "My New Hugo Site"
 
 
 [params]
-    address = "1230 91 St SW Unit 102"
-    phone = "587 712-0072"
-    fax = ""
-    email = "info@1230pharmacy.ca"
+    address = "1230 91 St SW, Unit 102"
+    address2 = "Edmonton, AB, T6X 0P2"
+    phone = "780-916-1230"
+    fax = "780-916-3933"
+    email = "1230pharmacy@gmail.com"
