@@ -1,13 +1,12 @@
 {{ define "main" }}
 <div class="hero bg-color-primary">
   <div class="container">
-    <h1>1230 Pharmacy and Travel Clinic</h1>
   </div>
 </div>
 <div class="container">
-  <div class="row">
-    <div class="col-md-6 my-3">
-      <h2>Opening Hours</h2>
+  <div class="row gx-5 small-container">
+    <div class="col-md-6 my-5">
+      <h2 class="text-center">Opening Hours</h2>
       <table class="table">
         <tr>
           <td>Monday</td>
@@ -39,8 +38,8 @@
         </tr>
       </table>
     </div>
-    <div class="col-md-6 my-3">
-      <h2 class="">Address</h2>
+    <div class="col-md-6 my-5">
+      <h2 class="text-center">Address</h2>
       <p>{{ .Site.Params.address }}<br>
         {{ .Site.Params.address2 }}</p>
         <p>Free parking available at the back of the building.</p>
@@ -56,12 +55,6 @@
         </div>
     </div>
   </div>
-</div>
-
-
-<div class="container my-5">
-  <h2>Google Reviews</h2>
-
 </div>
 
 <div class="">
