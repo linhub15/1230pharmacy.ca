@@ -1,29 +1,35 @@
 <div class="bg-color-primary">
-  <div class="container">
+  <div class="container small-container">
     <div class="row gx-5 text-center text-md-start">
       <div class="col-md my-3 my-md-5">
-        <h3>License</h3>
-        <div class="my-2">Pharmacy License #4030</div>
-        <div class="my-2">Amit Vaghela License #13164</div>
-        <div><a class="link-light" href="https://abpharmacy.ca/sites/default/files/PatientConcernPoster.pdf">Patient Concerns</a>
+        <div class="mx-auto w-max-content">
+          <h3>License</h3>
+          <div class="my-2">Pharmacy License #4030</div>
+          <div class="my-2">Amit Vaghela License #13164</div>
+          <div><a class="link-light" href="https://abpharmacy.ca/sites/default/files/PatientConcernPoster.pdf">Patient Concerns</a>
+          </div>
         </div>
       </div>
       <div class="col-md my-3 my-md-5">
-        <h3>Contact</h3>
-        <div class="my-2">Phone: {{ .Site.Params.phone}}</div>
-        <div class="my-2">Fax: {{ .Site.Params.fax }}</div>
-        <div class="my-2">Email: {{ .Site.Params.email }}</div>
-        <div class="my-2">social</div>
+        <div class="mx-auto w-max-content">
+          <h3>Contact</h3>
+          <div class="my-2">Phone: {{ .Site.Params.phone}}</div>
+          <div class="my-2">Fax: {{ .Site.Params.fax }}</div>
+          <div class="my-2">Email: {{ .Site.Params.email }}</div>
+          <div class="my-2">social</div>
+        </div>
       </div>
       <div class="col-md my-3 my-md-5">
-        <h3>Address</h3>
-        <p>
-          {{ .Site.Params.address }}<br />
-          {{ .Site.Params.address2 }}
-        </p>
-        <a href="{{ .Site.BaseURL | relURL }}">
-          <img class="footer-logo" src="/imgs/logo-vertical.png">
-        </a>
+        <div class="mx-auto w-max-content">
+          <h3>Address</h3>
+          <p>
+            {{ .Site.Params.address }}<br />
+            {{ .Site.Params.address2 }}
+          </p>
+          <a href="{{ .Site.BaseURL | relURL }}">
+            <img class="footer-logo" src="/imgs/logo-vertical.png">
+          </a>
+        </div>
       </div>
     </div>
   </div>
