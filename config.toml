@@ -10,3 +10,6 @@ title = "My New Hugo Site"
     fax = "780-916-3933"
     email = "1230pharmacy@gmail.com"
     licenseNumber = "4030"
+
+    [params.social]
+    facebook = "https://www.facebook.com/1230-Pharmacy-106712311521954/" 
