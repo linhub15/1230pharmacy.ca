@@ -24,7 +24,7 @@ html, body {
 .nav-logo {
   padding: 1em 0;
   width: 100%;
-  max-width: 250px;
+  max-width: 240px;
 }
 
 @media screen and (min-width: 768px){
