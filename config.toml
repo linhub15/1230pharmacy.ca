@@ -8,7 +8,7 @@ title = "My New Hugo Site"
     address2 = "Edmonton, AB, T6X 0P2"
     phone = "780-916-1230"
     fax = "780-916-3933"
-    email = "1230pharmacy@gmail.com"
+    email = "info@1230pharmacy.ca"
     licenseNumber = "4030"
 
     [params.social]
