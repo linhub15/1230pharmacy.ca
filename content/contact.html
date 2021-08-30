@@ -6,10 +6,10 @@ nav-weight: 2
   <div class="row gx-md-5">
     <div class="col-md-6 my-4">
     <h2>Contact Us</h2>
-    <form>
+    <form action="https://formspree.io/f/xqkwwalo" method="POST">
       <div class="my-3">
         <label class="form-label" for="email">Email</label>
-        <input class="form-control" type="email" id="email" required>
+        <input class="form-control" type="email" id="email" name="_replyto" required>
       </div>
       <div class="my-3">
         <label class="form-label" for="name">Name</label>
@@ -17,7 +17,7 @@ nav-weight: 2
       </div>
       <div class="my-3">
         <label class="form-label" for="message">Message</label>
-        <textarea class="form-control" type="text" id="message" required></textarea>
+        <textarea class="form-control" type="text" rows="5" id="message" name="message" required></textarea>
       </div>
       <div class="d-grid gap-2 col-6 mx-auto">
         <button class="btn btn-primary" type="submit">Submit</button>
