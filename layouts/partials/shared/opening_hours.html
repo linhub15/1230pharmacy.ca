@@ -1,0 +1,9 @@
+<h2 class="text-center">Opening Hours</h2>
+<table class="table text-reset">
+  {{ range .Site.Data.operations.opening_hours }}
+  <tr>
+    <td>{{ .day }}</td>
+    <td>{{ .hours }}</td>
+  </tr>
+  {{ end }}
+</table>
