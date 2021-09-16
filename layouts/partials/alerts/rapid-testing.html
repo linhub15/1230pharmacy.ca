@@ -1,4 +1,36 @@
-<div class="alert alert-info alert-dismissible show text-center m-0" role="alert" style="border-radius: 0;">
-  COVID-19 walk-in <strong>rapid testing</strong> is available. Results take 15 minutes.
-  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+<style>
+  #alert-rapid-testing {
+    border-radius: 0;
+    border: none;
+  }
+</style>
+
+<div
+  class="alert alert-info alert-dismissible show text-center m-0"
+  role="alert"
+  id="alert-rapid-testing"
+  hidden
+>
+  COVID-19 walk-in <strong>rapid testing</strong> is available. Results take 15
+  minutes.
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
 </div>
+
+<script>
+  const alertClosedBtn = document.querySelector(
+    '#alert-rapid-testing button.btn-close'
+  );
+
+  alertClosedBtn.addEventListener('click', () =>
+    window.sessionStorage.setItem('dismissed-alert', true)
+  );
+
+  if (window.sessionStorage.getItem('dismissed-alert') !== 'true') {
+    document.getElementById('alert-rapid-testing').hidden = false;
+  }
+</script>
