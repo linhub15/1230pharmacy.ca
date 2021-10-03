@@ -19,11 +19,14 @@
 </div>
 
 <!-- section:interior-photo -->
-<div class="img-wide ">
-
-</div>
+<div class="img-wide"></div>
 
 <!-- section:services -->
+{{ partial "home/services.html" . }}
+
+<!-- section:testimonials -->
+{{ partial "home/testimonials.html" . }}
+
 <div class="container">
   <div class="row gx-md-5">
     <div class="col-md-6 my-5">{{ partial "shared/opening_hours.html" . }}</div>
@@ -53,6 +56,5 @@
   </div>
 </div>
 
-{{ partial "home/services.html" . }}
 {{ .Content }} 
 {{ end }}

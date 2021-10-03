@@ -1,20 +1,24 @@
 - name: Michelle Penner
+  rating: 5
   review: >-
     My new favorite place for pharmacy services. The service is fantastic,
     pharmacists are very knowledgable, helpful, and appointments are handled
     smoothly and on time.
 - name: Ty Hurley
+  rating: 5
   review: >-
     It is a great pharmacy. Employees were fast and efficient and very kind
     and understanding. The manager/owner is an amazing person and is a great
     role model for employees to look up too. My experience their was second
     to none and I highly recommend this pharmacy to anyone reading this.
 - name: Ilynna
+  rating: 5
   review: >-
     Super friendly staff. Very organized and clean. After finding out they were
     accepting walk ins for covid-19 vaccine from calling to getting there to
     getting my shot, I was in and out within 15 minutes. Thank you!
-- name: ashija joshi
+- name: Ashija Joshi
+  rating: 5
   review: >-
     Their customer service is excellent. The pharmacists explained everything
     in detail in a very friendly and comfortable way. The center is well
