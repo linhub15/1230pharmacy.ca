@@ -1,3 +1,6 @@
+@import "custom-bootstrap.scss";
+
+/* Site styles */
 :root {
   --logo-color-primary: #3a4b8a;
   --logo-color-secondary: #7fc142;
@@ -6,12 +9,6 @@
 
 html, body {
   font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
-}
-
-.bg-color-primary {
-  background-color: var(--logo-color-primary);
-  color: white;
-  font-weight: bold;
 }
 
 .map {
