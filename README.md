@@ -1,2 +1,6 @@
-* Patients concern poster
-* link the license numbers to the scanned PDF licenses
+# Dev
+* `hugo serve`
+
+## 3rd Party Dependencies
+* Bootstrap v5.1.1
+ 

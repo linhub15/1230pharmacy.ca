@@ -36,3 +36,11 @@ html, body {
 .w-max-content {
   width: max-content;
 }
+
+.img-wide {
+  background-image: url('/imgs/interior_wide_shelves.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+}
