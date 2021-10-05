@@ -27,12 +27,6 @@
       </div>
       <div class="col-md my-3 my-md-5">
         <div class="mx-auto w-max-content">
-          <h3>Address</h3>
-          <p>
-            {{ .Site.Params.address }}<br />
-            {{ .Site.Params.address2 }}
-          </p>
-          
           <h3>Opening Hours</h3>
           {{ range .Site.Data.operations.opening_hours }}
             <div class="my-1 border-bottom border-light">
@@ -47,6 +41,10 @@
           <a href="{{ .Site.BaseURL | relURL }}">
             <img class="footer-logo" src="/imgs/logo_vertical.png">
           </a>
+          <p class="my-3 ms-2">
+            {{ .Site.Params.address }}<br />
+            {{ .Site.Params.address2 }}
+          </p>
         </div>
       </div>
     </div>
