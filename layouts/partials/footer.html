@@ -27,13 +27,7 @@
       </div>
       <div class="col-md my-3 my-md-5">
         <div class="mx-auto w-max-content">
-          <h3>Opening Hours</h3>
-          {{ range .Site.Data.operations.opening_hours }}
-            <div class="my-1 border-bottom border-light">
-              <span class="">{{ .day }}</span>
-              <span class="">{{ .abbr_hours }}</span>
-            </div>
-          {{ end }}
+          {{ partial "shared/opening_hours.html" . }}
         </div>
       </div>
       <div class="col-md my-3 my-md-5 order-md-first">

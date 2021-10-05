@@ -1,9 +1,9 @@
-<h2 class="text-center">Opening Hours</h2>
-<table class="table text-reset">
+<h3>Opening Hours</h3>
+<table class="text-reset">
   {{ range .Site.Data.operations.opening_hours }}
   <tr>
-    <td>{{ .day }}</td>
-    <td>{{ .hours }}</td>
+    <td class="py-0">{{ .day }}</td>
+    <td class="py-0 ps-3">{{ .hours }}</td>
   </tr>
   {{ end }}
 </table>
