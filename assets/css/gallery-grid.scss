@@ -1,0 +1,26 @@
+#gallery img {
+  object-fit: cover;
+}
+
+#gallery .grid-1 {
+  display: grid;
+  gap: 1em;
+  grid-template-areas:
+    "img-1 img-1 img-1 img-2 img-2"
+    "img-1 img-1 img-1 img-2 img-2"
+    "img-1 img-1 img-1 img-3 img-3"
+    "img-1 img-1 img-1 img-3 img-3"
+  ;
+}
+
+.img-1 {
+  grid-area: img-1;
+}
+
+.img-2 {
+  grid-area: img-2;
+}
+
+.img-3 {
+  grid-area: img-3;
+}
