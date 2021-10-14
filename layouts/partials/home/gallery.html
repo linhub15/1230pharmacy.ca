@@ -1,7 +1,19 @@
 <div class="container py-5" id="gallery">
-  <div class="grid-1">
-    <img class="img-1 w-100" src="https://via.placeholder.com/500x350" alt="">
-    <img class="img-2 h-100" src="https://via.placeholder.com/300x150" alt="">
-    <img class="img-3 h-100" src="https://via.placeholder.com/300x150" alt="">
+  <h2 class="fw-bold text-center">Gallery</h2>
+  {{ $album_url := print "/static/imgs/gallery" }}
+  {{ $images := readDir $album_url }}
+  <div class="gallery-scrollable">
+    <div class="gallery-row">
+    {{ range first (div (len $images) 2) $images }}
+      {{ $img_url := print "imgs/gallery/" .Name | absURL }}
+      <img src="{{ $img_url }}"/>
+    {{ end }}
+    </div>
+    <div class="gallery-row">
+    {{ range last (div (len $images) 2) $images }}
+      {{ $img_url := print "imgs/gallery/" .Name | absURL }}
+      <img src="{{ $img_url }}"/>
+    {{ end }}
+    </div>
   </div>
 </div>
