@@ -4,7 +4,7 @@
     <div class="row row-cols-md-2 my-3">
       {{ range .Site.Data.services }}
         <div class="col-md-4 d-flex flex-column g-3">
-          <style>.service-icon { max-width: 100px;}</style>
+          <style>.service-icon { max-width: 90px; border-radius: 10px;}</style>
           <img class="mx-auto my-2 service-icon" src="{{ .icon_src }}" alt="{{ .title }}">
           <div class="text-center">{{ .title }}</div>
         </div>
