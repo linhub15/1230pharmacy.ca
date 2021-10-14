@@ -1,14 +1,14 @@
 - title: Vaccines
-  icon-src:
+  icon_src: /icons/vaccines.png
 - title: COVID-19 Rapid testing
-  icon-src:
+  icon_src: /icons/rapid_testing.png
 - title: Travel Vaccine Consultation
-  icon-src:
+  icon_src: /icons/travel_vaccine_consultation.png
 - title: Strep Test
-  icon-src:
+  icon_src: /icons/strep_test.png
 - title: Automated Refills | Easy Renewals
-  icon-src:
+  icon_src: /icons/automated_refills.png
 - title: Detailed Medication reviews
-  icon-src:
+  icon_src: /icons/detailed_medication_reviews.png
 - title: One-on-one Consultations
-  icon-src:
+  icon_src: /icons/one_on_one_consultations.png
