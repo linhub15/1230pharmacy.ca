@@ -5,13 +5,13 @@
   <div class="gallery-scrollable">
     <div class="gallery-row">
     {{ range first (div (len $images) 2) $images }}
-      {{ $img_url := print "imgs/gallery/" .Name | absURL }}
+      {{ $img_url := print "imgs/gallery/" .Name | relURL }}
       <img src="{{ $img_url }}"/>
     {{ end }}
     </div>
     <div class="gallery-row">
     {{ range last (div (len $images) 2) $images }}
-      {{ $img_url := print "imgs/gallery/" .Name | absURL }}
+      {{ $img_url := print "imgs/gallery/" .Name | relURL }}
       <img src="{{ $img_url }}"/>
     {{ end }}
     </div>
