@@ -13,7 +13,6 @@
   <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav text-center text-md-left">
       {{ range .Site.Pages }}
-      {{ if isset .Params "nav-weight" }}
       <li class="nav-item">
       {{ if eq (.Param "nav-title") ($.Param "nav-title") }}
         <a class="nav-link active" aria-current="page" href="{{ .RelPermalink }}">
@@ -25,7 +24,7 @@
         </a>
       {{ end }}
       </li>
-      {{ end }}
+
       {{ end }}
     </ul>
   </div>
