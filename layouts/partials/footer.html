@@ -1,7 +1,7 @@
-<div class="bg-color-primary">
-  <div class="container">
+<div class="bg-secondary text-light fw-bold">
+  <div class="container py-5">
     <div class="row d-flex gx-md-5 text-center text-md-start">
-      <div class="col-md my-3 my-md-5">
+      <div class="col-md py-3">
         <div class="mx-auto w-max-content">
           <h3>License</h3>
           <div class="my-2">Pharmacy License <a class="link-light" href="/pdfs/1230_license.pdf">#4030</a></div>
@@ -10,7 +10,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md my-3 my-md-5">
+      <div class="col-md py-3">
         <div class="mx-auto w-max-content">
           <h3>Contact</h3>
           <div class="my-2">Phone: {{ .Site.Params.phone}}</div>
@@ -25,28 +25,20 @@
           </div>
         </div>
       </div>
-      <div class="col-md my-3 my-md-5">
+      <div class="col-md py-3">
         <div class="mx-auto w-max-content">
-          <h3>Address</h3>
-          <p>
-            {{ .Site.Params.address }}<br />
-            {{ .Site.Params.address2 }}
-          </p>
-          
-          <h3>Opening Hours</h3>
-          {{ range .Site.Data.operations.opening_hours }}
-            <div class="my-1 border-bottom border-light">
-              <span class="">{{ .day }}</span>
-              <span class="">{{ .abbr_hours }}</span>
-            </div>
-          {{ end }}
+          {{ partial "shared/opening_hours.html" . }}
         </div>
       </div>
-      <div class="col-md my-3 my-md-5 order-md-first">
+      <div class="col-md py-3 order-md-first">
         <div class="mx-auto w-max-content">
           <a href="{{ .Site.BaseURL | relURL }}">
             <img class="footer-logo" src="/imgs/logo_vertical.png">
           </a>
+          <p class="my-3 ms-2">
+            {{ .Site.Params.address }}<br />
+            {{ .Site.Params.address2 }}
+          </p>
         </div>
       </div>
     </div>

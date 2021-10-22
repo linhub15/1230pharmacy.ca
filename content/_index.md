@@ -1,4 +1,4 @@
 ---
 nav-title: home
-nav-weight: 1
+weight: 1
 ---

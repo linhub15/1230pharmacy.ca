@@ -1,35 +1,44 @@
 {{ define "main" }}
-<div class="hero bg-color-primary">
-  <div class="container">
-  </div>
-</div>
-<div class="container">
-  <div class="row gx-md-5">
-    <div class="col-md-6 my-5">
-      {{ partial "shared/opening_hours.html" . }}
-    </div>
-    <div class="col-md-6 my-5">
-      <h2 class="text-center">Address</h2>
-      <p>{{ .Site.Params.address }}<br>
-        {{ .Site.Params.address2 }}</p>
-        <p>Free parking available at the back of the building.</p>
-      <div>
 
-        <a
-        href="https://www.google.com/maps/place/1230+Pharmacy+%26+Travel+Clinic/data=!3m1!4b1!4m2!3m1!1s0x53a01f0f71022a73:0x14b26a313c623106"
-        target="_blank"
-        itemprop="hasMap"
-        data-tracking-element-type="7"
-        ><div class="map" title="Map showing business location." style="background-image: url('https://maps.googleapis.com/maps/api/staticmap?scale=1&amp;size=1600x900&amp;style=feature:poi.business|visibility:off&amp;style=feature:water|visibility:simplified&amp;style=feature:road|element:labels.icon|visibility:off&amp;style=feature:road.highway|element:labels|saturation:-90|lightness:25&amp;format=jpg&amp;language=en-GB&amp;region=CA&amp;markers=color:0x48487f|53.4222679,-113.476204&amp;zoom=16&amp;client=google-presto&amp;signature=SXNWt7Rs73xrbB4Jmmv67MTKTvE');
-        "></div></a>
-        </div>
-    </div>
+<!-- section:hero -->
+{{ partial "home/hero.html" . }}
+
+<!-- section:welcome -->
+<div class="container py-5">
+  <div class="col-md-7 mx-auto">
+    <h2 class="fw-bold py-2 text-center">
+      Welcome to <span class="text-secondary">1230 Pharmacy & Travel Clinic</span>
+    </h2>
   </div>
+  <p class="col-md-7 mx-auto">
+    <span class="fw-bold">Patient focused independent pharmacy</span> with the
+    primary goal of providing best possible care while respecting patient’s
+    convenience, comfort and safety. We are located next to Southwell Medical
+    Centre.
+  </p>
 </div>
 
-{{ partial "services.html" . }}
+<!-- section:interior-photo -->
+<div class="img-wide"></div>
 
-{{ .Content }}
+<!-- section:services -->
+{{ partial "home/services.html" . }}
 
+<!-- section:testimonials -->
+{{ partial "home/testimonials.html" . }}
 
-{{ end }}
+<!-- section:gallery -->
+{{ partial "home/gallery.html" . }}
+
+<!-- section:map -->
+<div style="line-height:0;">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2377.5838733177943!2d-113.4783926838132!3d53.42226787999502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a01f0f71022a73%3A0x14b26a313c623106!2s1230%20Pharmacy%20%26%20Travel%20Clinic!5e0!3m2!1sen!2sca!4v1633405471547!5m2!1sen!2sca"
+    width="100%"
+    height="400"
+    style="border:0"
+    allowfullscreen=""
+    loading="lazy"
+  ></iframe>
+</div>
+{{ .Content }} {{ end }}

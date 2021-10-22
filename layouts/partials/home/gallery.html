@@ -1,0 +1,18 @@
+<div class="container py-5" id="gallery">
+  {{ $album_url := print "/static/imgs/gallery" }}
+  {{ $images := readDir $album_url }}
+  <div class="gallery-scrollable">
+    <div class="gallery-row mx-auto">
+    {{ range first (div (len $images) 2) $images }}
+      {{ $img_url := print "imgs/gallery/" .Name | relURL }}
+      <img src="{{ $img_url }}"/>
+    {{ end }}
+    </div>
+    <div class="gallery-row mx-auto">
+    {{ range last (div (len $images) 2) $images }}
+      {{ $img_url := print "imgs/gallery/" .Name | relURL }}
+      <img src="{{ $img_url }}"/>
+    {{ end }}
+    </div>
+  </div>
+</div>
