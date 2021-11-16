@@ -26,6 +26,15 @@
     <!-- site styles -->
     {{ $styles := (resources.Get "css/main.scss" | toCSS | resources.Minify).RelPermalink }}
     <link rel="stylesheet" href="{{ $styles }}">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{.Site.Params.gtag}}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{.Site.Params.gtag}}');
+    </script>
 </head>
 <body>
     {{ partial "header.html" . }}
