@@ -2,7 +2,8 @@ baseURL = "https://1230pharmacy.ca"
 languageCode = "en-us"
 title = "1230 Pharmacy and Travel Clinic"
 
-
+# sitemap.xml
+disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
     description = """\
