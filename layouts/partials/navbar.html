@@ -13,11 +13,14 @@
   <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav text-center text-md-left">
       {{ range .Site.Pages }}
-      <li class="nav-item">
+      <li class="nav-item mx-2">
       {{ if eq (.Param "nav-title") ($.Param "nav-title") }}
-        <a class="nav-link active" aria-current="page" href="{{ .RelPermalink }}">
+        <div class="nav-link active user-select-none fw-bold"
+          role="button"
+          aria-current="page"
+          href="{{ .RelPermalink }}">
           {{ .Param "nav-title" | title }}
-        </a>
+        </div>
       {{ else }}
         <a class="nav-link" aria-current="page" href="{{ .RelPermalink }}">
           {{ .Param "nav-title" | title }}

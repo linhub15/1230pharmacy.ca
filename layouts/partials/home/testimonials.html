@@ -2,8 +2,11 @@
   <h2 class="text-secondary text-center fw-bold my-3">Testimonials</h2>
   <div class="row gx-md-5">
     <!-- figure out how to do range of max 3? EASY -->
-    {{ range first 4 .Site.Data.reviews}}
-    <div class="col-md-3 my-3">
+    {{ range $idx, $review := first 4 .Site.Data.reviews}}
+    <div class="col-md-3 my-3"
+      data-aos="fade"
+      data-aos-delay="{{mul $idx 150}}"
+      data-aos-once="true">
       <p>{{ range seq .rating }}⭐{{ end }}</p>
       <p>{{ .review }}</p>
       <span class="fw-bold text-secondary">- {{ .name }}</span>

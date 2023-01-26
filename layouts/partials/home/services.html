@@ -3,7 +3,7 @@
     <h2 class="fw-bold text-center my-3">Our <span class="text-secondary">Services</span></h2>
     <div class="row row-cols-md-2 my-3">
       {{ range .Site.Data.services }}
-        <div class="col-md-4 d-flex flex-column g-3">
+        <div class="col-md-4 d-flex flex-column g-3" data-aos="fade" data-aos-once="true">
           <style>.service-icon { max-width: 90px; border-radius: 10px;}</style>
           <img class="mx-auto my-2 service-icon" src="{{ .icon_src }}" alt="{{ .title }}">
           <div class="text-center">{{ .title }}</div>
