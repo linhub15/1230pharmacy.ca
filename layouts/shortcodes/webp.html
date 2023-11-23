@@ -1,0 +1,4 @@
+{{ $filter := images.Process "webp" }}
+{{ $image := resources.Get (.Get 0) }}
+{{ $filtered := images.Filter $filter $image }}
+{{ $filtered.RelPermalink }}

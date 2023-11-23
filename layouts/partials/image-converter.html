@@ -1,0 +1,4 @@
+{{ $filter := images.Process "webp" }}
+{{ $image := resources.Get . }}
+{{ $filtered := images.Filter $filter $image }}
+{{ return $filtered }}

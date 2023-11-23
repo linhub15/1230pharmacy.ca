@@ -1,11 +1,13 @@
 <div class="carousel slide" id="hero-carousel" data-bs-ride="carousel">
   <div class="carousel-inner rounded-3">
-    {{ $album_url := print "/static/imgs/carousel" }}
+    {{ $album_url := print "/assets/imgs/carousel" }}
     {{ $images := readDir $album_url }}
     {{ range $index, $element := $images }}
     {{ $img_url := print "imgs/carousel/" .Name | relURL }}
-    <div class="carousel-item {{ if eq $index 0 }}active{{end}}">      
-      <img src="{{ $img_url }}" class="d-block" alt="">
+    <div class="carousel-item {{ if eq $index 0 }}active{{end}}">
+      {{ with partial "image-converter.html" $img_url }}
+      <img src="{{ .RelPermalink }}" class="d-block" alt="">
+      {{ end }}
     </div>
     {{ end }}
   </div>
