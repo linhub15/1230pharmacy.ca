@@ -3,13 +3,13 @@ languageCode = "en-us"
 title = "1230 Pharmacy and Travel Clinic"
 
 # sitemap.xml
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy"]
 
 [params]
     description = """\
         South Edmonton independently owned community pharmacy. \
         Patient focused with the primary goal of providing \
-        best possible care while respecting patient’s convenience, comfort and \
+        best possible care while respecting patient's convenience, comfort and \
         safety. We are located next to Southwell Medical Centre.\
         """
     address = "1230 91 St SW, Unit 102"
