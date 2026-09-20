@@ -1,0 +1,24 @@
+{{ $team := slice
+  (dict "image" "imgs/team/srb-6481.jpg" "alt" "1230 Pharmacy team member")
+  (dict "image" "imgs/team/srb-6577.jpg" "alt" "1230 Pharmacy team member")
+  (dict "image" "imgs/team/srb-6559.jpg" "alt" "1230 Pharmacy team member")
+}}
+
+<section class="team-section container pb-5" aria-labelledby="team-heading">
+  <div class="team-grid col-md-8 mx-auto">
+    {{ range $team }}
+      {{ $member := . }}
+      {{ with partial "image-converter.html" $member.image }}
+        <img
+          class="team-portrait"
+          src="{{ .RelPermalink }}"
+          alt="{{ $member.alt }}"
+          loading="lazy"
+          decoding="async"
+          data-aos="fade"
+          data-aos-once="true"
+        />
+      {{ end }}
+    {{ end }}
+  </div>
+</section>

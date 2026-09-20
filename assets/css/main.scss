@@ -31,12 +31,35 @@ html, body {
   width: max-content;
 }
 
-.img-wide {
-  background-image: url('/imgs/interior_wide_shelves.jpg');
-  background-position: 50% 59%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 280px;
+.team-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.team-portrait {
+  aspect-ratio: 4 / 5;
+  border-radius: 0.25rem;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  width: 100%;
+}
+
+@include media-breakpoint-down(md) {
+  .team-section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-portrait {
+    aspect-ratio: 1;
+  }
 }
 
 // Carousel
@@ -47,6 +70,6 @@ html, body {
   overflow: hidden;
   width: 100%;
 }
-@include media-breakpoint-up(md) { 
+@include media-breakpoint-up(md) {
   .carousel-item img { height: 400px; }
 }
